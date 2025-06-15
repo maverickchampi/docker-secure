@@ -1,16 +1,34 @@
 # Steps
 
-Run command for create image
+## 1. Create image and container
+
+Run command for create image, create container and run it:
 
 ```
 docker compose up -d --build
 ```
+
+- Create only the image (without running the container):
+
+```
+docker compose build
+```
+
+- Create container after image is created:
+
+```
+docker compose create
+```
+
+## 2. Enter to container
 
 We enter to container
 
 ```
 docker exec -it docker-secure-sandbox-1 bash
 ```
+
+## 3. Clone repository and run the project
 
 Run script
 
